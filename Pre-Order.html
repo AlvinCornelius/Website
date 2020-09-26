@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order</title>
+    <link rel="stylesheet" href="Pre-Order.css">
+</head>
+<body>
+    <ul>
+        <li><a class="linklogo" href="Home.html"><img class=gbrlogo src="../Project/Asset/logo.png" alt=""></a></li>
+        <li class="dropdown">
+            <a href="" class="dropbtn">Game Info</a>
+            <div class="dropcontent">
+                <a href="Operator.html">Operators</a>
+                <a href="Maps.html">Maps</a>
+            </div>
+        </li>
+        <li><a href="Quarantine.html">Quarantine</a></li>
+        <li class="pre"><a href="Pre-Order.html">Pre-Order</a></li>
+    </ul>
+
+    <div>
+        <h1 class="judul">Pre-Order</h1>
+        <p>
+            <form name="form" onsubmit="return validate()" action="">
+            Username: <input id="username" type="text" name="username" class="input" placeholder="Your Username"><br><br>
+            Email: <input type="text" name="email" class="input" id="email" placeholder="Your E-mail"><br><br>
+            Password: <input type="password" name="password" class="input" id="password" placeholder="Your Password"><br><br>
+            Address: <input type="text" name="address" class="input" id="address" placeholder="Your Address"><br><br>
+            Number of copies: <input type="number" name="copies" id="copies" min="1"><br><br>
+            Type of game:
+            <select name="type" id="type">
+                <option value="Please">Please Select</option>
+                <option value="Retail">Retail</option>
+                <option value="Digital">Digital</option>
+            </select><br><br>
+            <input type="checkbox" name="check">
+            <label for="">Agreement to terms and services</label><br><br>
+            <input type="submit" value="Submit">
+            </form>
+        </p>
+    </div>
+
+    <footer>
+        ©2020 UBIPOST
+    </footer>
+</body>
+<script src="Pre-order.js"></script>
+</html>

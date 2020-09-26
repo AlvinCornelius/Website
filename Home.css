@@ -1,0 +1,190 @@
+body
+{
+	margin: 0;
+}
+
+ul
+{
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    background-color: black;
+    z-index: -1;
+}
+
+.linklogo
+{
+	height: 18px;
+	padding-top: 0;
+}
+
+.linklogo:hover
+{
+	background-color: black;
+}
+
+.gbrlogo
+{
+	width: 90px;
+    height: 53px;
+}
+
+li
+{
+	float: left;
+}
+
+li a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: rgb(59, 132, 228);
+}
+
+li.dropdown
+{
+	display: inline-block;
+}
+
+.dropcontent
+{
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropcontent a 
+{
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropdown:hover .dropcontent
+{
+	display: block;
+}
+
+li.pre
+{
+    float: right;
+}
+
+img
+{
+	width: 500px;
+	height: 300px;
+	background-size: cover;
+} 
+#cursor
+{
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+
+.outer
+{
+	padding-left: 450px;
+	padding-top: 100px;
+	padding-bottom: 300px;
+}
+
+.inner
+{
+	width: 500px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.inner img
+{
+	display: none;
+	width: 500px;
+	height: 300px;
+} 
+
+.inner img.current
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.prev,.next
+{
+	float: left;
+	margin-top: 110px;
+	cursor: pointer;
+}
+
+.prev
+{
+	position: relative;
+	margin-left: -45px;
+}
+
+.next
+{
+	position: relative;
+	margin-right: -45px;
+}
+
+.news
+{
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.content
+{
+	border-style: solid;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.content hr
+{
+	border-top: dashed 1px;
+	margin-right: 100px;
+	margin-left: 100px;;
+}
+
+footer
+{
+	position: relative;
+    bottom:0;
+    height: 25px;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width : 800px)
+{
+	body {text-align: center;}
+	ul li,
+	li.pre {float: none;}
+
+	.content {font-size: 20px;}
+
+	.outer {padding-left: 170px;padding-top: 100px;padding-bottom: 200px;}
+	.prev {margin-left: -110px;}
+}
